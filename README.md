@@ -15,13 +15,13 @@ A Foundry VTT module that lets you **listen to audio files while browsing in the
 2. Paste this manifest URL:
 
    ```
-   https://github.com/Jayty07/Audio-Preview/releases/latest/download/module.json
+   https://raw.githubusercontent.com/Jayty07/Audio-Preview/main/module.json
    ```
 
 3. Turn **off** "Install from the Bazaar if the package is found", then install.
 4. Launch your world, then go to **Game Settings → Manage Modules**, tick **File Picker Audio Preview**, and save.
 
-**Alternative: no GitHub release needed.** On the Forge's Game Configuration page, choose **Summon Import Wizard**. Turn off "Install found packages from the Bazaar", select `module.zip` as a ZIP file, and click **Analyze**. Then restart your server and enable the module in your world.
+**Alternative: upload the zip yourself.** On the Forge's Game Configuration page, choose **Summon Import Wizard**. Turn off "Install found packages from the Bazaar", select `module.zip` as a ZIP file, and click **Analyze**. Then restart your server and enable the module in your world.
 
 ## Install on a self-hosted Foundry
 
@@ -46,8 +46,8 @@ Find these under **Game Settings → Configure Settings → File Picker Audio Pr
 
 ## Publishing a new version (repository owner)
 
-1. Change `version` in `module.json`, and change the `download` URL so it points to the new tag, for example `.../releases/download/v1.0.1/module.zip`.
-2. Zip the module files so that `module.json` sits at the top level of the zip, and name the zip `module.zip`.
-3. On GitHub, create a release whose tag matches the version (for example `v1.0.1`), and attach both `module.json` and `module.zip` as release assets.
+The manifest and download links point straight at `module.json` and `module.zip` on the `main` branch, so no GitHub release is needed.
 
-The manifest URL always points to the latest release, so the Forge and Foundry will both see the update.
+1. Make your changes, then raise `version` in `module.json` (for example to `1.0.1`).
+2. Rebuild `module.zip` from `module.json`, `README.md`, `scripts/`, `styles/` and `lang/`, so that `module.json` sits at the top level of the zip.
+3. Commit both files to `main`. The Forge and Foundry will offer the update the next time they check for updates. GitHub caches these files for about 5 minutes.
