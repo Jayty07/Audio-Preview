@@ -1,0 +1,34 @@
+{
+  "id": "filepicker-audio-preview",
+  "title": "File Picker Audio Preview",
+  "description": "Adds play/stop buttons to audio files in Foundry's file browser so you can listen before you pick. Includes a seekable progress bar and per-user volume. Works with The Forge's Assets Library and Bazaar.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jayty07",
+      "url": "https://github.com/Jayty07"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/audio-preview.js"
+  ],
+  "styles": [
+    "styles/audio-preview.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/Jayty07/Audio-Preview",
+  "manifest": "https://github.com/Jayty07/Audio-Preview/releases/latest/download/module.json",
+  "download": "https://github.com/Jayty07/Audio-Preview/releases/download/v1.0.0/module.zip",
+  "readme": "https://github.com/Jayty07/Audio-Preview#readme",
+  "bugs": "https://github.com/Jayty07/Audio-Preview/issues"
+}

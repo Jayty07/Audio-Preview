@@ -1,0 +1,28 @@
+{
+  "FPAP": {
+    "Play": "Play preview",
+    "Stop": "Stop preview",
+    "Seek": "Click to jump to this point",
+    "UnsupportedShort": "Browsers can't play this file type",
+    "Unsupported": "{name} can't be previewed: browsers can't play this file type.",
+    "PlaybackError": "Couldn't play {name}. The file may be missing, blocked, or in a format this browser can't play.",
+    "Settings": {
+      "Volume": {
+        "Name": "Preview volume",
+        "Hint": "How loud previews in the file browser play on this computer."
+      },
+      "UseInterfaceVolume": {
+        "Name": "Scale by Interface volume",
+        "Hint": "Also multiply the preview volume by Foundry's Interface volume slider in the Playlists sidebar."
+      },
+      "PlayOnSelect": {
+        "Name": "Preview when selecting a file",
+        "Hint": "Clicking an audio file to select it also starts its preview."
+      },
+      "Loop": {
+        "Name": "Loop previews",
+        "Hint": "Repeat the preview until you stop it."
+      }
+    }
+  }
+}
